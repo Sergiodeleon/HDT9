@@ -1,10 +1,12 @@
+
 /*
+
 UVG
 Algoritmos y Estructuras de Datos - 2011
 Hoja de trabajo 7 
 Autor: Eduardo Castellanos
 
-Descripción: WordSetFactory. Clase  utilizada para instanciar los diferentes tipos de sets. 
+Descripciï¿½n: WordSetFactory. Clase  utilizada para instanciar los diferentes tipos de sets. 
 */
 class WordSetFactory {
 	
@@ -19,6 +21,14 @@ class WordSetFactory {
 	{
 	    if (tipo == 1)
 		    return new SimpleSet();
+            if (tipo == 2)
+		    return new RedBlack();
+            if (tipo == 3)
+		    return new SplayBST();
+            if (tipo == 4)
+		    return new HashMapp();
+            if (tipo == 5)
+		    return new TreeMapp();
 		else
 		    // aqui se regresara el set empleando sus implementaciones:
 			// if tipo == 2 cree una instancia para un Wordset implementao con Red Black Tree
